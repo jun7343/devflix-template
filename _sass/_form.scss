@@ -1,0 +1,30 @@
+.contact-form {
+  @include mainFont();
+  padding: rem(10px);
+
+  fieldset {
+    border: none;
+    font-weight: normal;
+  }
+
+  button[type="submit"] {
+    height: rem(60px);
+    width: 100%;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: rem(50px);
+  }
+
+  a.col-sm {
+    text-align: center;
+    font-size: medium;
+    color: dodgerblue;
+    text-decoration: underline;
+  }
+
+  [v-cloak] {
+    display: none;
+  }
+}
