@@ -12,8 +12,8 @@
             {% endif %}
         </a>
     </h1>
-    <div class="dropdown header-icon">
-        <a id="profile" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <div id="profile" class="dropdown header-icon">
+        <a role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <img src="/assets/img/user.jpg" class="icon-profile">
         </a>
         <div class="dropdown-menu" aria-labelledby="profile">
@@ -22,8 +22,8 @@
             <a class="dropdown-item" href="#">Something else here</a>
         </div>
     </div>
-    <div class="dropdown header-icon">
-        <a id="alert" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <div id="alert" class="dropdown header-icon">
+        <a  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <svg class="icon-alert"><use xlink:href="#icon-alert"></use></svg>
             <span class="alert-dots"></span>
         </a>
@@ -33,9 +33,11 @@
             <a class="dropdown-item" href="#">Something else here</a>
         </div>
     </div>
-    <a id="search" class="header-icon" role="button">
-        <svg class="icon-search"><use xlink:href="#icon-search"></use></svg>
-    </a>
+    <div id="search" class="dosearch header-icon">
+        <a role="button">
+            <svg class="icon-search"><use xlink:href="#icon-search"></use></svg>
+        </a>
+    </div>
 </header>
 
 <div id="mask" class="overlay"></div>

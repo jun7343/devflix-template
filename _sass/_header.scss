@@ -85,6 +85,10 @@ body {
     border-radius: 50%;
   }
 
+  #profile > .dropdown-menu {
+    margin-top: rem(13px);
+  }
+
   .icon-alert {
     width: 70%;
     height: 70%;
@@ -123,19 +127,27 @@ body {
       width: 90%;
     }
     .icon-alert {
-      height: 65%;
-      width: 65%;
+      height: 70%;
+      width: 70%;
     }
     .icon-search {
-      height: 65%;
-      width: 65%;
+      height: 70%;
+      width: 70%;
     }
     .icon-login{
-      height: 65%;
-      width: 65%;
+      height: 70%;
+      width: 70%;
     }
     .alert-dots {
       right: 0.2em;
+    }
+
+    #search {
+      margin-right: rem(20px);
+    }
+
+    #alert {
+      margin-right: rem(20px);
     }
   }
 }
