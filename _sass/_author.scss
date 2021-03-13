@@ -13,6 +13,7 @@
     margin: auto;
     max-width: rem(800px);
     padding: 0 rem(20px);
+    height: rem(180px);
 
     @include media("<sm") {
       text-align: center;
@@ -29,10 +30,16 @@
     text-decoration: none;
     border: none;
     transition: all 0.3s;
+    width: rem(160px);
+    height: rem(160px);
 
     &:hover {
       fill: $themeColor;
     }
+  }
+
+  a:hover {
+    text-decoration: none;
   }
 
   img {
@@ -60,7 +67,7 @@
   }
 
   .name {
-    margin: 0;
+    margin: rem(15px) 0;
 
     a {
       @include mainFont();
@@ -80,12 +87,16 @@
 
   .desc {
     @include mainFont(300);
-    margin: rem(10px);
+    margin: rem(15px) 0;
     font-size: rem(16px);
     line-height: rem(25px);
 
     @include media(">=sm") {
       font-size: rem(18px);
     }
+  }
+
+  .img-rounded {
+    height: 100%;
   }
 }

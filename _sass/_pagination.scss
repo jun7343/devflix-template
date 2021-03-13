@@ -25,17 +25,36 @@
       }
     }
 
+    a.next:hover {
+      transform: scale(1.8);
+    }
+
+    a.previous:hover {
+      transform: scale(1.8);
+    }
+
     a.previous {
       svg {
         transform: rotate(180deg);
       }
     }
 
-    .page_number {
+    .page-number {
       color: #fff;
       font-size: rem(17px);
       line-height: rem(22px);
-      margin: 0 rem(10px);
+      text-decoration: none;
+      margin: 0 rem(15px);
+    }
+
+    .page-number:hover {
+      color: $themeColor;
+      transform: scale(1.8);
+    }
+
+    .page-active {
+      color: $themeColor;
+      transform: scale(1.8);
     }
   }
 

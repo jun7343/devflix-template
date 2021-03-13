@@ -99,6 +99,19 @@ layout: main
     {% if site.paginate %}
         {% include pagination-home.html %}
     {% endif %}
+    <div class="pagination pagination-home">
+        <a href="" class="previous" onclick="ga('send', 'event', 'pagination', 'click', 'page previous')">
+            <svg><use xlink:href="#icon-arrow-right"></use></svg>
+        </a>
+        <a href="" class="page-number"><span>1</span></a>
+        <a href="" class="page-number"><span>2</span></a>
+        <a href="" class="page-number"><span>3</span></a>
+        <a href="" class="page-number"><span>4</span></a>
+        <a href="" class="page-number"><span>5</span></a>
+        <a href="" class="next" onclick="ga('send', 'event', 'pagination', 'click', 'page next')">
+            <svg><use xlink:href="#icon-arrow-right"></use></svg>
+        </a>
+    </div>
 </main>
 
 {% assign social_urls = '' %}

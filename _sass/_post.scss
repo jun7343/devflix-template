@@ -24,7 +24,7 @@
 
     @include media(">=sm") {
       flex-basis: 70%;
-      padding: 0 rem(30px) 0 rem(10px);
+      padding: 0 rem(15px) 0 rem(10px);
     }
   }
 }
@@ -88,6 +88,21 @@
   }
 
   p.post-subtitle {
+    color: darken($lightGray, 30%);
+    font-size: rem(17px);
+    margin: rem(10px) auto;
+    line-height: 1.6;
+
+    @include media(">=sm") {
+      font-size: rem(20px);
+    }
+  }
+
+  strong.dev-post-title {
+    font-size: rem(27px);
+  }
+
+  span.post-subtitle {
     color: darken($lightGray, 30%);
     font-size: rem(17px);
     margin: rem(10px) auto;
@@ -166,12 +181,25 @@
   }
 
   a {
-    color: $themeColor;
+    color: #141414;
     text-decoration: none;
 
     &:hover {
       color: #a9a9a9;
     }
+  }
+
+  .dev-post-item {
+    text-decoration: none;
+    color: #141414;
+
+    margin-bottom: rem(45px);
+  }
+
+  .dev-post-item:hover {
+    text-decoration: none;
+    color: #141414;
+    opacity: 0.3;
   }
 
   iframe {
@@ -187,11 +215,10 @@
   h6 {
     @include mainFont(700);
     margin-top: 0;
-    padding-top: rem(50px);
+    padding-top: rem(10px);
 
     @include media(">=sm") {
       margin-top: 0;
-      padding-top: rem(60px);
     }
   }
   h1 {

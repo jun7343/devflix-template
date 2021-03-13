@@ -45,52 +45,91 @@
     opacity: 1;
   }
 
+  ::-webkit-scrollbar { width: rem(4px); }
+  ::-webkit-scrollbar-track { background-color:#141414; }
+  ::-webkit-scrollbar-thumb { background: #ff0a16; border-radius: rem(10px); }
+
+  @media screen and (max-width: 600px) {
+    ::-webkit-scrollbar-track { background-color:#ff0a16; }
+  }
+
   .search-list {
     position: absolute;
     width: 100%;
+    height: rem(570px);
+    overflow-y:scroll;
     @include mainFont(300);
     display: none;
     padding: 0 rem(20px);
     margin: rem(20px) 0;
     list-style-type: none;
 
-    @include media("<sm") {
-      height: 380px;
-      overflow: scroll;
+    @media screen and (max-width: 600px) {
+      height: rem(590px);
     }
 
     .active & {
       display: block;
     }
 
-    .entry-date {
-      float: right;
-      display: none;
+    .search-date {
+      width: 7%;
       font-size: rem(14px);
+      padding-top: rem(35px);
 
-      @include media(">=sm") {
-        display: inline;
+      @media screen and (max-width: 800px) {
+        display: none;
       }
     }
 
-    .entry-category {
-      text-transform: uppercase;
-      background-color: $themeColor;
-      margin-right: rem(5px);
-      height: rem(20px);
-      border-radius: rem(10px);
-      font-size: rem(12px);
-      padding: rem(2px) rem(8px);
-      color: #ffffff;
+    li {
+      height: rem(100px);
+      border-bottom: 1px solid darken($accentDark, 80%);
+    }
+
+    .search-thumbnail {
+      text-align: center;
+      width: 12%;
+
+      @media screen and (max-width: 800px) {
+        width: 20%;
+      }
+    }
+
+    .search-thumbnail img {
+      height: 100%;
+      width: 100%;
+    }
+
+    .search-content {
+      margin-left: rem(10px);
+      margin-right: rem(10px);
+      width: 78%;
+      overflow: hidden;
+      word-break: break-word;
+
+      @media screen and (max-width: 800px) {
+        width: 75%;
+      }
+
+      @media screen and (max-width: 600px) {
+        width: 70%;
+      }
+    }
+
+    div {
+      padding: rem(10px) 0;
+      float: left;
+      height: 100%;
+      color:white
     }
 
     a {
       color: $accentDark;
       text-decoration: none;
       display: block;
-      padding: rem(15px) 0;
       width: 100%;
-      border-bottom: 1px solid darken($accentDark, 80%);
+      height: 100%;
       transition: all 0.3s;
       line-height: rem(25px);
 
@@ -100,6 +139,10 @@
           color: #ffffff;
         }
       }
+    }
+
+    p {
+      margin-top: rem(13px);
     }
   }
 
